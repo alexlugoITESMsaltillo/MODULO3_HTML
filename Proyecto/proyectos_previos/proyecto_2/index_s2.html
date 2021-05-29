@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .body{
+            height: 100%;
+        }
+        .header a{
+            cursor: pointer;
+        }
+
+        .logo-img{
+            width: 230px;
+            margin: 30px auto;
+            display: block;
+        }
+
+        nav ul{
+             list-style: none;
+             text-align: center;
+             border-top: 1px solid #d9d9d9;
+             border-bottom: 1px solid #d9d9d9;
+        }
+
+        nav ul li{
+            display: inline-block;
+        }
+
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+            padding: 28px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            margin: 0 5px;
+            color: #4386f5;
+        }
+        nav ul li a:hover{
+            background-color: rgb(216, 227, 231,0.5);
+            border-bottom: 3px solid  #4386f5;
+            color: #4386f5;
+        }
+        .container-hero-img{
+            background: url(/proyectos_previos/proyecto_2/images_s2/hero-img-banner.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .container-hero-img img{
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+        }
+        table tr td a{
+            text-decoration: none;
+            font-size: 18px;
+            text-align: left;
+            margin: 0 0 0 0px;
+            color: #333;
+        }
+        .cupons-table table{
+            margin: 35px auto 0 auto;
+        }
+        .cupons-table table td{
+            border: 1px solid #4386f5;
+            border-top: 4px solid #4386f5;
+        }
+        .cupons-table table td:hover{
+            border: 1px solid #4386f5;
+            box-shadow: -3px 3px #4386f5;
+            cursor: pointer;
+        }
+        
+        .logo-table{
+            width: 50px;
+            float: left;
+            margin: 0 30px 0 0;
+        }
+
+        .container-envio{
+            margin: 80px auto 0 auto;
+            display: flex;
+            width: 100%;
+        }
+        .envio-1{
+            margin: 0 auto 0 auto;
+        }
+        .envio-2{
+            margin: 0 auto 0 auto;
+        }
+        .envio-3{
+            margin: 0 auto 0 auto;
+        }
+        .envio-title{
+            margin: 20px 0 0 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .envio-p{
+            padding: 12px 0;
+            font-size: 18px;
+            margin: 2px 0 20px 85px ;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+        .fas{
+            float: left;
+            padding-right: 25px;
+            margin: 20px 0;
+        }
+        .far{
+            float: left;
+            padding-right: 25px;
+            margin: 20px 0;
+        }
+
+        .container-cards{
+            width: 100%;
+            display: flex;
+            padding: 120px 0 50px 0;
+        }
+        .card-1{
+            border: 1px solid #bdc7c9;
+            width: 21%;
+            height: 400px;
+            margin: 0 2% 0 40px;
+        }
+        .card-1:hover{
+            box-shadow: 6px 6px rgb(0, 0, 3, 0.7);
+        }
+        .card-2:hover{
+            box-shadow: 6px 6px rgb(0, 0, 3, 0.7);
+        }
+        .card-3:hover{
+            box-shadow: 6px 6px rgb(0, 0, 3, 0.7);
+        }
+        .card-4:hover{
+            box-shadow: 6px 6px rgb(0, 0, 3, 0.7);
+        }
+        .card-2{
+            border: 1px solid #bdc7c9;
+            width: 20.95%;
+            margin: 0 2% 0 25px;
+        }
+        .card-3{
+            border: 1px solid #bdc7c9;
+            width: 21%;
+            margin: 0 2% 0 25px;
+        }
+        .card-4{
+            border: 1px solid #bdc7c9;
+            width: 21%;
+            margin: 0 2% 0 20px;
+        }
+
+        .header-card, #title{
+          display: inline-block;
+        }
+
+        .title-card, #title{
+            margin: 5px 7px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+        .hr-card{
+            background-color: rgb(216, 227, 231,0.3);
+            width: 90%;
+            margin: 0 0 0 15px;
+        }
+
+        .list-card{
+            list-style: none;
+            padding: 16px;
+        }
+        .list-card li{
+            margin: 10px 0;
+        }
+        .list-card li a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #0061a8;
+        }
+        .list-card li:hover{
+            background-color: skyblue;
+        }
+
+
+
+    </style>
+    <body>
+        <div class="header">
+            <a class="logo"><img class="logo-img" src="/proyectos_previos/proyecto_2/images_s2/logo_macri_1200x1200.png" alt="logo-img"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Sucursales</a></li>
+                <li><a href="#">Contacto</a></li>
+
+            </ul>
+        </nav>
+        <div class="container-hero-img">
+            <a href="#"><img src="/proyectos_previos/proyecto_2/images_s2/hero-img-banner.webp" alt="hero-img"></a>
+        </div>
+
+        <div class="cupons-table">
+            <table cellspacing="60" cellpadding="25">
+                <tbody>
+                    <tr>
+                        <td><a href="#"><img class="logo-table"src="/proyectos_previos/proyecto_2/images_s2/adidas-logo.png" alt="adidas-logo"><span class="table-text">Hasta 40% de Descuento</span></a></td>
+                        <td><a href="#"><img class="logo-table"src="/proyectos_previos/proyecto_2/images_s2/nike-logo.png" alt="adidas-logo"><span class="table-text">Hasta 40% de Descuento</span></a></td>
+                        <td><a href="#"><img class="logo-table"src="/proyectos_previos/proyecto_2/images_s2/Puma-Logo.png" alt="puma-logo"><span class="table-text">Hasta 40% de Descueno</span></a></td>
+                        <td><a href="#"><img src="/proyectos_previos/proyecto_2/images_s2/reebok-logo.png" alt="reebok-logo" class="logo-table"><span class="table-text">Hasta 40% de Descuento</span></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container-envio">
+            <div class="envio-1">
+                <i class="fas fa-comments-dollar fa-3x"></i>
+                <h3 class="envio-title">Envio Gratis</h3>
+                <p class="envio-p">Entrega estimada: 5 dias habiles</p>
+            </div>
+            <div class="envio-2">
+                <i class="fas fa-truck fa-3x"></i>
+                <h3 class="envio-title">Recibe hoy mismo</h3>
+                <p class="envio-p">Disponible en pedidos antes de las 11:30pm</p>
+            </div>
+            <div class="envio-3">
+                <i class="far fa-calendar-alt fa-3x"></i>
+                <h3 class="envio-title">Recibe mañana</h3>
+                <p class="envio-p">Despues de tu compra maximo 2 articulos</p>
+            </div>
+        </div>
+        <div class="container-cards">
+            <div class="card-1">
+                <div class="header-card">
+                    <img src="/proyectos_previos/proyecto_2/images_s2/soccer.webp" alt="">
+                </div>
+                <div class="title-card">
+                    <h2 id="title">Soccer</h2>
+                </div>
+                <hr class="hr-card">
+                <div class="body-class">
+                    <ul class="list-card">
+                        <li><a href="#">Calzado</a></li>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Equipamiento</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-2">
+                <div class="header-card">
+                    <img src="/proyectos_previos/proyecto_2/images_s2/running.webp" alt="">
+                </div>
+                <div class="title-card">
+                    <h2 id="title">Correr</h2>
+                </div>
+                <hr class="hr-card">
+                <div class="body-class">
+                    <ul class="list-card">
+                        <li><a href="#">Calzado</a></li>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-3">
+                <div class="header-card">
+                    <img src="/proyectos_previos/proyecto_2/images_s2/gym.webp" alt="">
+                </div>
+                <div class="title-card">
+                    <h2 id="title">Fitness</h2>
+                </div>
+                <hr class="hr-card">
+                <div class="body-class">
+                    <ul class="list-card">
+                        <li><a href="#">Calzado</a></li>
+                        <li><a href="#">Ropa</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Proteinas y Complementos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-4">
+                <div class="header-card">
+                    <img src="/proyectos_previos/proyecto_2/images_s2/otros-deportes.webp" alt="">
+                </div>
+                <div class="title-card">
+                    <h2 id="title">Otros deportes</h2>
+                </div>
+                <hr class="hr-card">
+                <div class="body-class">
+                    <ul class="list-card">
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Natacion</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Baseball</a></li>
+                        <li><a href="#">Ciclismo</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
